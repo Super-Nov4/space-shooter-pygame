@@ -12,3 +12,5 @@ class PlayerShip(Entity):
         self.add_component("Velocity", VelocityComponent(0, 0))
         self.add_component("Position", PositionComponent(0, 0))
         self.add_component("Sprite", SpriteComponent(asset_manager.get_cached("player_ship")))
+
+        """Здесь должна быть реализована стрельба, движение игрока?"""
