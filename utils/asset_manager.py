@@ -39,29 +39,29 @@ class AssetManager:
         """
 
         # Preloading player assets
-        self._cached_player["player_shoot.wav"] = Sound(self._return_file_path("player_shoot.wav"))
-        self._cached_player["player_ship.png"] = load(self._return_file_path("player_ship.png"))
+        self._cached_player["player_shoot"] = Sound(self._return_file_path("player_shoot.wav"))
+        self._cached_player["player_ship"] = load(self._return_file_path("player_ship.png"))
 
         # Preloading enemy assets
-        self._cached_enemies["enemy_shoot.wav"] = Sound(self._return_file_path("enemy_shoot.wav"))
-        self._cached_enemies["ship0.png"] = load(self._return_file_path("ship0.png"))
-        self._cached_enemies["ship1.png"] = load(self._return_file_path("ship1.png"))
-        self._cached_enemies["ship2.png"] = load(self._return_file_path("ship2.png"))
+        self._cached_enemies["enemy_shoot"] = Sound(self._return_file_path("enemy_shoot.wav"))
+        self._cached_enemies["ship0"] = load(self._return_file_path("ship0.png"))
+        self._cached_enemies["ship1"] = load(self._return_file_path("ship1.png"))
+        self._cached_enemies["ship2"] = load(self._return_file_path("ship2.png"))
 
         # Preload planet assets
-        self._cached_planets["blue_small_planet.png"] = load(self._return_file_path("black_hole.png"))
-        self._cached_planets["green_planet.png"] = load(self._return_file_path("black_hole.png"))
-        self._cached_planets["pink_planet.png"] = load(self._return_file_path("black_hole.png"))
-        self._cached_planets["black_hole.png"] = load(self._return_file_path("black_hole.png"))
+        self._cached_planets["blue_small_planet"] = load(self._return_file_path("black_hole.png"))
+        self._cached_planets["green_planet"] = load(self._return_file_path("black_hole.png"))
+        self._cached_planets["pink_planet"] = load(self._return_file_path("black_hole.png"))
+        self._cached_planets["black_hole."] = load(self._return_file_path("black_hole.png"))
 
         # Preload bullet assets
-        self._cached_bullets["pixel_laser_yellow.png"] = load(self._return_file_path("pixel_laser_yellow.png"))
-        self._cached_bullets["pixel_laser_green.png"] = load(self._return_file_path("pixel_laser_green.png"))
-        self._cached_bullets["pixel_laser_blue.png"] = load(self._return_file_path("pixel_laser_blue.png"))
-        self._cached_bullets["pixel_laser_red.png"] = load(self._return_file_path("pixel_laser_red.png"))
+        self._cached_bullets["pixel_laser_yellow"] = load(self._return_file_path("pixel_laser_yellow.png"))
+        self._cached_bullets["pixel_laser_green"] = load(self._return_file_path("pixel_laser_green.png"))
+        self._cached_bullets["pixel_laser_blue"] = load(self._return_file_path("pixel_laser_blue.png"))
+        self._cached_bullets["pixel_laser_red"] = load(self._return_file_path("pixel_laser_red.png"))
 
         # Preload music assets
-        self._cached_music["background_music.ogg"] = music.load("background_music.ogg")
+        self._cached_music["background_music"] = music.load("background_music.ogg")
 
     @staticmethod
     def _return_file_path(file_name: str) -> str:
