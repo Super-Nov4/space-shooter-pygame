@@ -1,9 +1,8 @@
-from os.path import join, abspath
+from os.path import abspath
 from pygame.image import load
 from pygame.mixer import Sound
 from pygame.mixer import music
 from pygame import Surface
-from os import listdir
 import sys
 
 
