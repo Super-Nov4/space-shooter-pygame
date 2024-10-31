@@ -1,10 +1,10 @@
 from components.velocity import VelocityComponent
 from components.position import PositionComponent
 from components.sprite import SpriteComponent
-from entity import Entity
+from .entity import Entity
 
 
-class PlayerShip(Entity):
+class Player(Entity):
     def __init__(self):
         super().__init__()
         self.add_component("Velocity", VelocityComponent(0, 0))

@@ -60,7 +60,7 @@ class AssetManager:
         self._cached_bullets["pixel_laser_red"] = load(self._return_file_path("pixel_laser_red.png"))
 
         # Preload music assets
-        self._cached_music["background_music"] = music.load("background_music.ogg")
+        # self._cached_music["background_music"] = music.load("background_music.ogg")
 
     @staticmethod
     def _return_file_path(file_name: str) -> str:
@@ -70,7 +70,7 @@ class AssetManager:
         except AttributeError:
             if file_name.endswith(".png"):
                 file_path = abspath(f"assets/sprites/{file_name}")
-            elif file_name.endswith(".ogg") or file_path.endswith(".ogg"):
+            elif file_name.endswith(".wav") or file_name.endswith(".ogg"):
                 file_path = abspath(f"assets/sounds/{file_name}")
 
         return file_path
