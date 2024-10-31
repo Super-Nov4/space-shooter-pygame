@@ -10,7 +10,7 @@ class EntitySystem(SingletonSystem):
             self.initialized = True
 
     def spawn_entities(self):
-        self.entities = [choice([BaseEnemy]) for _ in range(5)]
+        self.entities = [choice([BaseEnemy()]) for _ in range(5)]
 
     @property
     def get_entities(self):

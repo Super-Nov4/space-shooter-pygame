@@ -17,7 +17,7 @@ class RectRenderer(BaseRenderer):
 
 class SpriteRenderer(BaseRenderer):
     def render(self, _surface: Surface, _obj):
-        _surface.blit(_obj.components['Sprite'].sprite, _obj.rect)
+        _surface.blit(_obj.components['Sprite'].sprite, _obj.components['Sprite'].rect)
 
 
 class RenderSystem(SingletonSystem, SpriteRenderer, RectRenderer):
@@ -40,7 +40,7 @@ class RenderSystem(SingletonSystem, SpriteRenderer, RectRenderer):
         :return: None
         """
         for entity in self._render_queue:
-            if entity.get_component(component_type='Sprite'):
+            if entity.get_component('Sprite'):
                 self.render(_surface, entity)
 
     def _initialize_render_queue(self) -> None:
